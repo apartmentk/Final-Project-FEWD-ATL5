@@ -2,6 +2,8 @@
 
 
 
+
+
  	
 
  	$('.art1').click(function(){ 
@@ -20,23 +22,26 @@
                 $('.vid-b').slideToggle( "fast" );
             });
 
+       $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+        console.log('working')
+    });
   
 
         $('.mobile-nav-btn').on('click',function(e) {
           e.preventDefault();
           $('nav').slideToggle('show')
+
         });
 
-$('body').scrollspy({ target: '.navbar' })
+
+ 
+
+
+
+
      
-
- 	// $('.album').hover(function(){ 
-
-  //               $('this').addClass( ".album-hover" );
-                
-  //           });
-
-
  
  	// fixed header 
  	var stickyOffset = $('header').offset().top;
@@ -47,6 +52,7 @@ $('body').scrollspy({ target: '.navbar' })
 
 		  if (scroll >= stickyOffset) sticky.addClass('fixed');
 		  else sticky.removeClass('fixed');
+
 		});
  	// fixed header end
  

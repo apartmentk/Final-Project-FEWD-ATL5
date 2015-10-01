@@ -31,7 +31,19 @@ hr {
 	opacity: .1;
 }
 
-
+.glyphicon {
+    position: relative;
+    top: -3px;
+    color: #232323;
+    /* font-size: 12px; */
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 200;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 
 a.nav-link:hover {
@@ -77,7 +89,10 @@ header {
 }
 
 
+p {
 
+	padding: 7px;
+}
 
 
 header .logo {
@@ -91,7 +106,7 @@ header .logo {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
 	header .logo {
 		float: none;
@@ -144,7 +159,7 @@ header nav a:hover {
 	float: right;
 }*/
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
 	header nav a {
 	display: block;
@@ -155,7 +170,7 @@ header nav a:hover {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
 	header .mobile-nav-btn  {
 		float: right;
@@ -221,7 +236,7 @@ div {
 body {
 
 	
-	background-color: black;
+	background-color: #000;
 	margin: 0 auto;
 }
 
@@ -237,12 +252,16 @@ button {
 	
 }
 
+.nobord {
+	border: none;
+}
+
 footer	{
 	text-align: center;
 	color: #fff;
 	padding: 20px;
 	height: 20px;
-	background-color: black;
+	
 	color: gray;
 	width: 100%;
 }
@@ -301,8 +320,8 @@ header nav 	{
 }*/
 
 img {
-	width: 275px;
-	height: 275px;
+	width: 100%;
+	height: 100%;
     opacity: 1.0;
     filter: alpha(opacity=100); /* For IE8 and earlier */
 }
@@ -364,13 +383,62 @@ tr {
 	}
 }
 
+.modal-dialog {
+    width: 600px;
+    margin: 100px auto;
+}
+
+@media (max-width: 760px) {
+
+	.modal-dialog {
+    width: 400px;
+    margin: 100px auto;
+}
+}
+
+.modal-header {
+    min-height: 16.43px;
+    padding: 15px;
+    color: white;
+    font-size: 19px;
+    font-weight: bolder;
+    border-bottom: 0px solid #000; 
+}
+
+
+.modal-content {
+    position: relative;
+     background-color: rgba(0,0,0, .5); 
+   
+}
+
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #F3FFFB;
+    /* text-shadow: 0 1px 0 #fff; */
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+
 .fixed {
     position: fixed;
     top:0; left:0;
     width: 100%; }
 
 
+.modal-body2 {
 
+	background: white;
+	padding: 13px;
+}
+
+.ss-required-asterisk {
+
+	color: red;
+}
 
 
 
@@ -391,6 +459,16 @@ tr {
 
 }
 
+.ad {
+
+	background: black;
+	width: 100%;
+	height: 560px;
+}
+
+.gram {
+	margin-top: 30px;
+}
 
 
 
@@ -420,7 +498,7 @@ tr {
 	padding-bottom: 0px;
 	padding-top: 37px;
 
-	background: white;
+	
 	background-attachment: fixed;
 
 }
@@ -474,13 +552,27 @@ tr {
 
 .cover	{
 	text-align: left;
+	background: 
+	linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.9)
+    ),
+
+    url('../img/scot.jpg');
+    background-position: bottom;
+	background-size: cover;
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	height: 760px;
+	width: 100%;
+	margin-top: -21px;
 }
 
 .album	{
 
 	
 	text-align: center;
-	padding: 10px;
+	padding: 0px;
 	/*padding-top: 17px;*/
 	padding-bottom: 10px;
 	
@@ -497,14 +589,10 @@ tr {
 }
 
 .dropdown-menu {
-
-	/*margin-top: 90px;*/
-	/*margin-left: 40px;*/
-	background: gray;
-	color: white;
-	
-	
-
+    /* margin-top: 90px; */
+    /* margin-left: 40px; */
+    background: #E7E7E7;
+    color: #FFFFFF;
 }
 
 .featured {
@@ -540,14 +628,14 @@ tr {
 	
 	background: 
 	linear-gradient(
-      rgba(0, 0, 0, 0.9), 
-      rgba(0, 0, 0, 0.4)
+      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.9)
     ),
 
     url('../img/scot.jpg');
     background-position: bottom;
 	background-size: cover;
-	background-attachment: fixed;
+	background-attachment: scroll;
 	background-repeat: no-repeat;
 	height: 760px;
 	width: 100%;
@@ -606,7 +694,7 @@ tr {
 	font-size: 24px;
 	text-align: center; 
 	padding-top: 20px;
-	margin-top: 40px;
+	
 	padding-bottom: 30px;
 	color: white;
 	letter-spacing: 30px;
@@ -620,10 +708,16 @@ tr {
 	}
 }
 
-.logo	{
+.logos	{
+	
+	text-align: center;
+	padding-top: 350px;
+	color: white;
+	font-family: 'Legend';
+	letter-spacing: 10px;
+	
 
-	width: 100px;
-	height: 100px;
+
 }
 
 .music  {
@@ -633,8 +727,7 @@ tr {
 	padding-bottom: 0px;
 	padding-top: 37px;
 
-	background: black;
-	background-attachment: fixed;
+	
 
 }
 
@@ -670,12 +763,12 @@ tr {
 	
 	
 	height: 100px;
-	background-color: black;
+	
 	padding: 10px;
 	padding-top: 7px;
 	padding-bottom: 26px;
 	width: 100%;
-	height: 100%;
+	height: 35%;
 }
 
 
@@ -686,18 +779,13 @@ tr {
 }
 
 .profile {
-
-	/*font-family: 'avenir';
-	letter-spacing: 1px;
-
-	font-size: 47px;*/
-	padding: 10px;
-	padding-bottom: 20px;
-	float: left;
-	width: 100%;
-	color: white;
-	text-align: center;
-
+    padding: 6px;
+    margin-left: -4px;
+    padding-bottom: 20px;
+    /* float: right; */
+    width: 90%;
+    color: white;
+    text-align: center;
 }
 
 @media (max-width: 1009px) {
@@ -792,16 +880,7 @@ tr {
 
 	width: 100%;
 	height: 100%;
-	background: 
-	linear-gradient(
-      rgba(0, 0, 0, 1.0), 
-      rgba(0, 0, 0, 0.6)
-    ),
-
-
-    url('../img/scot.jpg');
-	background-size: cover;
-	background-position: top;
+	
 	margin-bottom: 20px;
 	margin-left: 10px;
 	display: none;
@@ -875,7 +954,7 @@ tr {
 
 .col-sm-3 {
 
-	padding: 3px;
+	padding: 15px;
 	padding-bottom: 30px;
 
 	margin: 0px;
@@ -983,6 +1062,8 @@ tr {
 
 }
 
+
+
 .music-title {
 
 	font-family: 'Legend';
@@ -1016,10 +1097,10 @@ tr {
     background-color: #251919;
 }
 
-.navbar-default .navbar-brand {
-    color: #D60404;
+.navbar-default .navbar-brand  {
+    color: #AF0B0B;
     padding-top: 17px;
-    font-size: 35px;
+    font-size: 28px;
 }
 	
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
